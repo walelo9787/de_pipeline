@@ -1,6 +1,6 @@
 variable "credentials" {
   description = "My Credentials"
-  default     = "credentials/gc-creds.json"
+  default     = "../credentials/gc-creds.json"
 }
 
 variable "project" {
@@ -10,12 +10,12 @@ variable "project" {
 
 variable "region" {
   description = "Region"
-  default     = "europe-west1-b"
+  default     = "EUROPE-WEST1"
 }
 
 variable "location" {
   description = "Project Location"
-  default     = "europe-west1-b"
+  default     = "EUROPE-WEST1"
 }
 
 variable "bq_dataset_name" {

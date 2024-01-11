@@ -23,9 +23,10 @@ params = {
     "zones_output" : f"{AIRFLOW_HOME}/zones.csv",
     "gc_credentials_filename": "gc-creds.json",
     "gc_project_id": "white-defender-410709",
-    "gcs_bucket_name": "whatever"
+    "gcs_bucket_name": "white-defender-410709-taxi-data-bucket"
 }
 
+# create a google client
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = params["gc_credentials_filename"]
 client = instantiate_google_client(params["gc_project_id"], params["gcs_bucket_name"])
 
