@@ -1,1 +1,4 @@
 /.idea
+/credentials/gc-creds.json
+dags/__pycache__/
+.env

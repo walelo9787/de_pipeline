@@ -3,6 +3,7 @@ mkdir -p ./dags ./logs ./plugins ./config
 
 # create .env file
 touch -a .env
+echo -e "AIRFLOW_UID=$(id -u)" > .env
 
 # build customized image
 docker compose build
