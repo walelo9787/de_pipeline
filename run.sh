@@ -12,7 +12,7 @@ docker compose build
 docker compose up airflow-init
 
 # run the rest of airflow services
-docker compose up
+docker compose up --build
 
 # delete env file
 rm .env

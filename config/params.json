@@ -1,0 +1,7 @@
+{
+  "trips_url_prefix" : "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_",
+  "trips_output" : "trips.parquet",
+  "zones_url" : "https://d37ci6vzurychx.cloudfront.net/misc/taxi+_zone_lookup.csv",
+  "zones_output" : "zones.csv",
+  "gc_credentials_filename": "gc-creds.json"
+}
