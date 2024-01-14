@@ -15,7 +15,7 @@
     <li>Docker</li>
     <li>Airflow</li>
     <li>DBT</li>
-    <li>BI Tool: to be decided</li>
+    <li>Google Looker Studio</li>
     </ul>
     <h4>Prerequisites</h4>
     <p>In order to be able to run this program properly, you need to have the following:</p>
