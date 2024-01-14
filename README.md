@@ -5,9 +5,9 @@
     <h4>Description</h4>
     <p>This is a personal project and is an introduction for me to data engineering concepts
     and tools.</p>
-    <p>In this project, we download public taxi records from <a target="_blank" 
-    href="https://www.nyc.gov/">nyc.gov</a> and load it into a data warehouse to be later 
-    transformed and visualised through a clear dashboard.</p>
+    <p>In this project, we download public taxi records from <a href="https://www.nyc.gov/"
+    target="_blank">nyc.gov</a> and load it into a data warehouse to be later transformed 
+    and visualised through a clear dashboard.</p>
     <h4>Tools</h4>
     <ul>
     <li>Terraform</li>
