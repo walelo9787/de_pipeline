@@ -5,7 +5,7 @@ variable "credentials" {
 
 variable "project" {
   description = "Project"
-  default     = "white-defender-410709"
+  default     = "<Place your project ID here !>"
 }
 
 variable "region" {
