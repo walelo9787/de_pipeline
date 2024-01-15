@@ -20,15 +20,15 @@
     <h4>Prerequisites</h4>
     <p>In order to be able to run this program properly, you need to have the following:</p>
         <ul>
-        <li>Git bash installed on your machine. If not, visit this <a href="https://git-scm.com/download/win">link</a> 
+        <li>Git bash installed on your machine. If not, visit this <a href="https://git-scm.com/download/win">page</a> 
         for more information on the download and installation.</li>
         <li>A Google Cloud Platform account. If not, you can create one and in the free trial you will have a 300$ 
         credit which will be more than enough for this project.</li>
         <li>Terraform installed on your machine. If not, visit this <a 
         href="https://developer.hashicorp.com/terraform/install?product_intent=terraform">
-        link</a> for more information on the download and installation depending on your OS.</li>
+        page</a> for more information on the download and installation depending on your OS.</li>
         <li>Docker installed on your machine. If not, visit this <a
-        href="https://www.docker.com/products/docker-desktop/">link</a> for more information on the download and 
+        href="https://www.docker.com/products/docker-desktop/">page</a> for more information on the download and 
         installation depending on your OS.</li>
         </ul>
     <h4>Steps to run</h4>
@@ -75,7 +75,7 @@
         of each task in real time.</li>
         <li>This should be the grid for the run dag :<br>
         <img src="screen_shots/airflow_grid_ss.PNG"></li>
-        <li>Once done, you can check manually from the Google console that a 'parquet' folder have been created and
+        <li>Once done, you can check manually from the Google console that a 'parquet' folder has been created and
         two parquets files have been uploaded to it. Also, make sure that two tables have been created under the
         BigQuery dataset.</li>
         <li>Once verified, you can get back to the terminal running 'run.sh' and pres 'CTRL+C' two times to kill
