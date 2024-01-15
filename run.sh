@@ -1,10 +1,5 @@
 # create necessary folder for airflow
-mkdir -p ./dags ./logs ./plugins ./config
-
-# change ownership of the necessary folders from root to user
-username=$(id -u)
-group=$(id -g)
-chown -R $username:$group ./dags ./logs ./plugins ./config
+mkdir -p ./logs
 
 # create .env file
 touch -a .env

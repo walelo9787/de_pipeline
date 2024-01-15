@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: white-defender-410709
+    schema: bq_dataset
+
+    tables:
+      - name: external_table_zones
+      - name: external_table_trips

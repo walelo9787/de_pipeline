@@ -22,14 +22,14 @@
         <ul>
         <li>Git bash installed on your machine. If not, visit this <a href="https://git-scm.com/download/win">page</a> 
         for more information on the download and installation.</li>
-        <li>A Google Cloud Platform account. If not, you can create one and in the free trial you will have a 300$ 
-        credit which will be more than enough for this project.</li>
         <li>Terraform installed on your machine. If not, visit this <a 
         href="https://developer.hashicorp.com/terraform/install?product_intent=terraform">
         page</a> for more information on the download and installation depending on your OS.</li>
         <li>Docker installed on your machine. If not, visit this <a
         href="https://www.docker.com/products/docker-desktop/">page</a> for more information on the download and 
         installation depending on your OS.</li>
+         <li>A Google Cloud Platform account. If not, you can create one and in the free trial you will have a 300$ 
+        credit which will be more than enough for this project.</li>
         </ul>
     <h4>Steps to run</h4>
     <p>Below are the steps to follow in order to create the BI dashboard displayed below.</p>
@@ -83,13 +83,32 @@
         'docker compose down --volumes --rmi all'</li>
         </ol>
     <li>Transforming BigQuery table</li>
+        <ol>
+        <li>First of all, you need to set up a DBT Cloud account. See 
+        <a href="https://www.youtube.com/watch?v=COeMn18qSkY">here</a> for more details on how to do that and
+        connect it to your GitHub account. Follow these <a href="https://docs.getdbt.com/guides/bigquery?step=1">
+        steps</a> as well to connect your DBT Cloud account to BigQuery.</li>
+        <li>Once done, copy 'path_to_repo/dbt/staging' into your new DBT git repo under 'models'. Copy also the 
+        content of 'path_to_repo/dbt/macros' to the 'macros' folder in your DBT git repo.</li>
+        <li>Make sure to update 'staging/schema.yml' with your own proper variables values.</li>
+        <li>In DBT cloud space, run 'dbt run --select staging' to execute the copied model.</li>
+        <li>You can verify that a new view has been created in BigQuery studio under the name 'staging'.</li>
+        </ol>
     <li>Creating the dashboard</li>
+        <ol>
+        <li>Head over to <a href="https://lookerstudio.google.com/">Looker Studio</a> to create your dashboard.</li>
+        <li>Connect Looker Studio to BigQuery and link the report to the newly created view, 'staging'.</li>
+        <li>Now up to you ! Here is my dashboard, but you can certainly be more creative.</li>
+        <img src="screen_shots/dashboard.PNG">
+        </ol>
     </ol>
     <h4>Improvements</h4>
     <p>Although this was an introduction to Data Engineering, I should have focused more on the following:</p>
     <ul>
     <li>The service account granted permissions. The assigned ones are more than what we needed and ideally, in a 
     production environment, we should limit these permissions as much as we could.</li>
+    <li>Dive deeper into DBT cloud concepts and create more complex transformations.</li>
+    <li>Create more charts in the report.</li>
     </ul>
 </body>
 </html>
